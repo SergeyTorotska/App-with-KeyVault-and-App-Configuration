@@ -9,7 +9,7 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage: 'Use 5.x net core'
+- stage: 'Use net core'
   jobs:
   - job: InstallJob
     steps:
