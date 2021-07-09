@@ -45,7 +45,7 @@ stages:
         targetPath: '$(Build.ArtifactStagingDirectory)' 
         artifactName: 'netcoreapp'
 
-- stage: 'Deploy Web App'
+- stage: Deploy
   jobs:
   - job: DeployJob 
     steps:
