@@ -9,7 +9,7 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage: 'Use net core'
+- stage: Install
   jobs:
   - job: InstallJob
     steps:
@@ -18,7 +18,7 @@ stages:
       inputs:
         version: '5.0.x'
         
-- stage: 'Build the Web App'
+- stage: Build
   jobs:
   - job: BuildJob
     steps:
